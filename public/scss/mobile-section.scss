@@ -1,0 +1,49 @@
+.mobile-section {
+  padding: 40px 0;
+  .container-mobile {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    justify-content: center;
+    grid-gap: 16px;
+    .mobile-select {
+      margin: 0 35px;
+      border-width: 1px;
+      border-color: #d6d6d6;
+      border-style: solid;
+      border-radius: 2px;
+      background-color: white;
+      padding: 6px 60px;
+    }
+    .mobile-btns-foot {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      margin: 0 20px;
+      position: relative;
+      bottom: 50px;
+      .mobile-btn1 {
+        a {
+          border-width: 1px;
+          border-color: rgb(138, 150, 160);
+          border-style: solid;
+          border-radius: 2px;
+          background-color: rgb(255, 255, 255);
+          color: $menu-color;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+      .mobile-btn2 {
+        a {
+          border-width: 1px;
+          border-color: rgb(138, 150, 160);
+          border-style: solid;
+          border-radius: 2px;
+          background-color: rgb(255, 255, 255);
+          color: $menu-color;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
