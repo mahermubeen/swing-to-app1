@@ -13,35 +13,55 @@
       border-radius: 2px;
       background-color: white;
       padding: 6px 60px;
+      option {
+        font-size: $menu-font;
+      }
     }
     .mobile-btns-foot {
       display: grid;
-      grid-template-columns: 1fr max-content;
-      margin: 0 20px;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 18px;
       position: relative;
       bottom: 50px;
+      grid-gap: 25px;
       .mobile-btn1 {
         a {
           border-width: 1px;
-          border-color: rgb(138, 150, 160);
+          border-color: #8a96a0;
           border-style: solid;
           border-radius: 2px;
-          background-color: rgb(255, 255, 255);
-          color: $menu-color;
-          padding: 10px 20px;
+          background-color: white;
+          color: #aaaaaa;
+          padding: 5px 20px;
           cursor: pointer;
+          display: grid;
+          grid-template-columns: repeat(2, max-content);
+          grid-gap: 5px;
+          align-items: center;
+          justify-content: center;
+          span {
+            font-size: $btn-text;
+          }
         }
       }
       .mobile-btn2 {
         a {
           border-width: 1px;
-          border-color: rgb(138, 150, 160);
+          border-color: #8a96a0;
           border-style: solid;
           border-radius: 2px;
-          background-color: rgb(255, 255, 255);
-          color: $menu-color;
-          padding: 10px 20px;
+          background-color: white;
+          color: #aaaaaa;
+          padding: 5px 20px;
           cursor: pointer;
+          display: grid;
+          grid-template-columns: repeat(2, max-content);
+          grid-gap: 5px;
+          justify-content: center;
+          align-items: center;
+          span {
+            font-size: $btn-text;
+          }
         }
       }
     }

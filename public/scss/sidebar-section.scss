@@ -13,6 +13,7 @@
       cursor: pointer;
       a {
         color: $menu-active;
+        font-size: $menu-font;
       }
     }
   }
@@ -41,6 +42,10 @@
           padding: 17px;
           align-items: center;
           color: $menu-color;
+          p {
+            font-size: $menu-font;
+            line-height: $menu-line;
+          }
         }
       }
     }
@@ -59,6 +64,7 @@
       cursor: pointer;
       a {
         color: #aaaaaa;
+        font-size: $menu-font;
       }
     }
   }

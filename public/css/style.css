@@ -120,7 +120,8 @@ a {
     width: 100%;
     cursor: pointer; }
     .sidebar-section .head-btn-wrapper .menu-head-btn a {
-      color: #0074ff; }
+      color: #0074ff;
+      font-size: 16px; }
 .sidebar-section .sidebar-options-wrapper {
   border-top: 1px solid #d1e0ff;
   border-bottom: 1px solid #d1e0ff;
@@ -141,6 +142,9 @@ a {
       padding: 17px;
       align-items: center;
       color: #aaaaaa; }
+      .sidebar-section .sidebar-options-wrapper .options-ul li a p {
+        font-size: 16px;
+        line-height: 24px; }
 .sidebar-section .foot-btn-wrapper {
   padding: 25px 13px;
   border-right: 1px solid #d1e0ff; }
@@ -154,7 +158,8 @@ a {
     width: 100%;
     cursor: pointer; }
     .sidebar-section .foot-btn-wrapper .menu-foot-btn a {
-      color: #aaaaaa; }
+      color: #aaaaaa;
+      font-size: 16px; }
 
 .mobile-section {
   padding: 40px 0; }
@@ -171,12 +176,15 @@ a {
       border-radius: 2px;
       background-color: white;
       padding: 6px 60px; }
+      .mobile-section .container-mobile .mobile-select option {
+        font-size: 16px; }
     .mobile-section .container-mobile .mobile-btns-foot {
       display: grid;
-      grid-template-columns: 1fr max-content;
-      margin: 0 20px;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 18px;
       position: relative;
-      bottom: 50px; }
+      bottom: 50px;
+      grid-gap: 25px; }
       .mobile-section .container-mobile .mobile-btns-foot .mobile-btn1 a {
         border-width: 1px;
         border-color: #8a96a0;
@@ -184,8 +192,15 @@ a {
         border-radius: 2px;
         background-color: white;
         color: #aaaaaa;
-        padding: 10px 20px;
-        cursor: pointer; }
+        padding: 5px 20px;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: 5px;
+        align-items: center;
+        justify-content: center; }
+        .mobile-section .container-mobile .mobile-btns-foot .mobile-btn1 a span {
+          font-size: 14px; }
       .mobile-section .container-mobile .mobile-btns-foot .mobile-btn2 a {
         border-width: 1px;
         border-color: #8a96a0;
@@ -193,8 +208,15 @@ a {
         border-radius: 2px;
         background-color: white;
         color: #aaaaaa;
-        padding: 10px 20px;
-        cursor: pointer; }
+        padding: 5px 20px;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center; }
+        .mobile-section .container-mobile .mobile-btns-foot .mobile-btn2 a span {
+          font-size: 14px; }
 
 .options-section {
   padding: 40px 30px;
@@ -206,6 +228,10 @@ a {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     grid-gap: 160px; }
+    .options-section .head-options-wrapper .option-btn2 span,
+    .options-section .head-options-wrapper .option-btn3 span,
+    .options-section .head-options-wrapper .option-btn4 span {
+      font-size: 16px; }
     .options-section .head-options-wrapper .option-btn1 {
       border-width: 1px;
       border-color: #8a96a0;
@@ -214,6 +240,8 @@ a {
       background-color: white;
       width: 128px;
       height: 32px; }
+      .options-section .head-options-wrapper .option-btn1 span {
+        font-size: 14px; }
       .options-section .head-options-wrapper .option-btn1 a {
         color: #aaaaaa;
         display: grid;
@@ -273,17 +301,19 @@ a {
         display: grid;
         grid-template-columns: 1fr max-content; }
         .options-section .options-new-wrapper .option-settings .row1 span {
-          color: #1a173b; }
+          color: #1a173b;
+          font-size: 18px; }
         .options-section .options-new-wrapper .option-settings .row1 .option-btn {
           border-width: 1px;
           border-color: #0074ff;
           border-style: solid;
           border-radius: 2px;
           background-color: white;
-          width: 100px;
-          height: 28px; }
+          padding: 5px; }
           .options-section .options-new-wrapper .option-settings .row1 .option-btn a span {
-            color: #0074ff; }
+            color: #0074ff;
+            font-size: 14px;
+            padding: 5px; }
       .options-section .options-new-wrapper .option-settings .row2 {
         display: grid;
         grid-template-columns: repeat(3, max-content);
@@ -293,7 +323,8 @@ a {
           display: grid;
           grid-gap: 7px; }
           .options-section .options-new-wrapper .option-settings .row2 .menu1 span {
-            color: #354052; }
+            color: #354052;
+            font-size: 16px; }
           .options-section .options-new-wrapper .option-settings .row2 .menu1 .shade-select {
             border-width: 1px;
             border-color: #d6d6d6;
@@ -301,7 +332,9 @@ a {
             border-radius: 2px;
             background-color: white;
             width: 220px;
-            height: 40px; }
+            height: 40px;
+            font-size: 15px;
+            padding: 5px; }
         .options-section .options-new-wrapper .option-settings .row2 .shade-select {
           border-width: 1px;
           border-color: #d6d6d6;
@@ -309,7 +342,9 @@ a {
           border-radius: 2px;
           background-color: white;
           width: 96px;
-          height: 40px; }
+          height: 40px;
+          font-size: 15px;
+          padding: 5px; }
         .options-section .options-new-wrapper .option-settings .row2 .emp-input-wrapper {
           border-width: 1px;
           border-color: #d6d6d6;
@@ -328,21 +363,29 @@ a {
         grid-template-columns: repeat(3, max-content);
         grid-gap: 10px;
         align-items: end; }
-        .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div {
-          background: white;
-          border-width: 1px;
-          border-color: #d6d6d6;
-          border-style: solid;
-          border-radius: 2px;
-          background-color: white;
-          width: 150px;
-          height: 40px;
-          align-items: center;
-          display: inline-flex;
-          padding: 10px; }
-          .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div input {
-            border: none;
-            width: 100%; }
+        .options-section .options-new-wrapper .option-settings .row3 .menu1 {
+          display: grid;
+          grid-gap: 7px; }
+          .options-section .options-new-wrapper .option-settings .row3 .menu1 span {
+            font-size: 16px; }
+          .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div {
+            background: white;
+            border-width: 1px;
+            border-color: #d6d6d6;
+            border-style: solid;
+            border-radius: 2px;
+            background-color: white;
+            width: 150px;
+            height: 40px;
+            align-items: center;
+            display: inline-flex;
+            padding: 10px; }
+            .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div input {
+              border: none;
+              width: 100%;
+              font-size: 15px; }
+            .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div span {
+              font-size: 15px; }
         .options-section .options-new-wrapper .option-settings .row3 .input-div {
           background: white;
           border-width: 1px;
@@ -357,7 +400,10 @@ a {
           padding: 10px; }
           .options-section .options-new-wrapper .option-settings .row3 .input-div input {
             border: none;
-            width: 100%; }
+            width: 100%;
+            font-size: 15px; }
+          .options-section .options-new-wrapper .option-settings .row3 .input-div span {
+            font-size: 15px; }
         .options-section .options-new-wrapper .option-settings .row3 .emp-input-wrapper {
           border-width: 1px;
           border-color: #d6d6d6;
@@ -379,14 +425,16 @@ a {
           display: grid;
           grid-gap: 7px; }
           .options-section .options-new-wrapper .option-settings .row4 .menu1 span {
-            color: #354052; }
+            color: #354052;
+            font-size: 16px; }
           .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper {
             display: grid;
             grid-template-columns: 1fr max-content;
             grid-gap: 7px;
             align-items: center; }
             .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper span {
-              color: #5f6d79; }
+              color: #5f6d79;
+              font-size: 15px; }
             .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper .color-select {
               border-width: 1px;
               border-color: #d6d6d6;
@@ -407,7 +455,8 @@ a {
             align-items: center;
             height: 40px; }
             .options-section .options-new-wrapper .option-settings .row4 .menu2 .menu2-box1 span {
-              color: #5f6d79; }
+              color: #5f6d79;
+              font-size: 15px; }
           .options-section .options-new-wrapper .option-settings .row4 .menu2 .color-select {
             border-width: 1px;
             border-color: #d6d6d6;

@@ -8,6 +8,13 @@
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     grid-gap: 160px;
+    .option-btn2,
+    .option-btn3,
+    .option-btn4 {
+      span {
+        font-size: $btn-text1;
+      }
+    }
     .option-btn1 {
       border-width: 1px;
       border-color: rgb(138, 150, 160);
@@ -16,7 +23,9 @@
       background-color: rgb(255, 255, 255);
       width: 128px;
       height: 32px;
-
+      span {
+        font-size: $btn-text;
+      }
       a {
         color: #aaaaaa;
         display: grid;
@@ -87,6 +96,7 @@
         grid-template-columns: 1fr max-content;
         span {
           color: $dark-purple;
+          font-size: 18px;
         }
         .option-btn {
           border-width: 1px;
@@ -94,12 +104,12 @@
           border-style: solid;
           border-radius: 2px;
           background-color: rgb(255, 255, 255);
-          width: 100px;
-          height: 28px;
-
+          padding: 5px;
           a {
             span {
               color: $menu-active;
+              font-size: 14px;
+              padding: 5px;
             }
           }
         }
@@ -114,6 +124,7 @@
           grid-gap: 7px;
           span {
             color: $dark-purple1;
+            font-size: 16px;
           }
           .shade-select {
             border-width: 1px;
@@ -123,6 +134,8 @@
             background-color: rgb(255, 255, 255);
             width: 220px;
             height: 40px;
+            font-size: 15px;
+            padding: 5px;
             option {
             }
           }
@@ -135,6 +148,8 @@
           background-color: rgb(255, 255, 255);
           width: 96px;
           height: 40px;
+          font-size: 15px;
+          padding: 5px;
           option {
           }
         }
@@ -160,7 +175,10 @@
         grid-gap: 10px;
         align-items: end;
         .menu1 {
+          display: grid;
+          grid-gap: 7px;
           span {
+            font-size: 16px;
           }
           .input-wrapper {
             .input-div {
@@ -178,8 +196,10 @@
               input {
                 border: none;
                 width: 100%;
+                font-size: 15px;
               }
               span {
+                font-size: 15px;
               }
             }
             .input-img {
@@ -201,8 +221,10 @@
           input {
             border: none;
             width: 100%;
+            font-size: 15px;
           }
           span {
+            font-size: 15px;
           }
         }
         .emp-input-wrapper {
@@ -230,6 +252,7 @@
           grid-gap: 7px;
           span {
             color: $dark-purple1;
+            font-size: 16px;
           }
           .input-wrapper {
             display: grid;
@@ -238,6 +261,7 @@
             align-items: center;
             span {
               color: $light-gray;
+              font-size: 15px;
             }
             .color-select {
               border-width: 1px;
@@ -265,6 +289,7 @@
             }
             span {
               color: $light-gray;
+              font-size: 15px;
             }
           }
 
