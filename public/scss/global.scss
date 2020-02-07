@@ -78,5 +78,35 @@ a {
 @media only screen and (max-width: 785px) {
     .body-section {
         grid-template-columns: 1fr;
+        .less-padding {
+            padding: 0 !important;
+        }
+        .up {
+            height: 276px;
+            overflow: hidden;
+            background: #00000057;
+            .container-mobile {
+                opacity: 0.3;
+            }
+            .arrow-down-mobile {
+                display: grid;
+            }
+        }
+        .down {
+            height: auto;
+            overflow: hidden;
+            background: #fafbfc;
+            .container-mobile {
+                background-color: transparent;
+                opacity: 1;
+                overflow: auto;
+            }
+            .arrow-down-mobile {
+                display: none;
+            }
+            .arrow-up-mobile {
+                display: grid;
+            }
+        }
     }
 }

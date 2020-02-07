@@ -52,3 +52,33 @@ window.onclick = function(event) {
         document.getElementById('myDropdown').style.display = "none";
     }
 }
+
+var up_btn = document.getElementById('up-btn');
+var down_btn = document.getElementById('down-btn');
+var mobile_wrapper = document.getElementById('mobile-wrapper');
+
+down_btn.addEventListener("click", function() {
+    mobile_wrapper.className = mobile_wrapper.className.replace(" up", " down");
+});
+
+
+up_btn.addEventListener("click", function() {
+    mobile_wrapper.className = mobile_wrapper.className.replace(" down", " up");
+});
+
+
+
+var page_toggle = document.getElementById('page-toggle');
+var page_2 = document.getElementById('page-2');
+var page_1 = document.getElementById('page-1');
+
+page_toggle.addEventListener("click", function() {
+
+    var ul = this.parentElement.parentElement.firstElementChild.firstElementChild;
+
+
+    ul.classList.toggle("page-two");
+    page_1.classList.toggle("new-hidden");
+    page_2.classList.toggle("new-hidden1");
+
+});

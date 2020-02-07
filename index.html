@@ -41,6 +41,7 @@
             </div>
         </div>
         <div class="body-section">
+
             <div class="sidebar-section">
                 <div class="head-btn-wrapper">
                     <button class="menu-head-btn">
@@ -180,7 +181,26 @@
             </button>
                 </div>
             </div>
-            <div class="mobile-section">
+            <div class="nav-mobile hidden">
+                <nav>
+                    <ul class="nav-ul">
+                        <li><a class="active" href="#">슬라이드 메뉴</a></li>
+                        <li><a href="#">탑 메뉴</a></li>
+                        <li><a href="#">푸터 메뉴</a></li>
+                        <li><a href="#">드롭다운 리스트 메뉴</a></li>
+                        <li><a href="#">드롭다운 박스 메뉴</a></li>
+                    </ul>
+                </nav>
+                <div class="paging-wrapper">
+                    <img class="left-img" src="./public/images/left.png" />
+                    <div id="page-toggle" class="pages">
+                        1/<span id="page-1" class="page1">1</span>
+                        <span id="page-2" class="page2 hidden">2</span i>
+                    </div>
+                    <img class="right-img" src="./public/images/right.png" />
+                </div>
+            </div>
+            <div id="mobile-wrapper" class="mobile-section up">
                 <div class="container-mobile">
                     <select class="mobile-select">
               <option>아이폰 8 PLUS / 8S PLUS</option>
@@ -201,27 +221,34 @@
                             <a href="#">
                                 <img src="./public/images/eye-on.png" />
                                 <span>미리보기</span>
-                            </a>
-                        </div>
-                        <div class="mobile-btn2">
-                            <a href="#">
-                                <img src="./public/images/refresh-icon.png" />
-                                <span>화면 초기화</span>
-                            </a>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="mobile-btn2">
+                        <a href="#">
+                            <img src="./public/images/refresh-icon.png" />
+                            <span>화면 초기화</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="options-section">
-                <div class="head-options-wrapper">
-                    <button class="option-btn1">
+
+            <div id="down-btn" class="arrow-down-mobile hidden">
+                <img src="./public/images/left.png" />
+            </div>
+            <div id="up-btn" class="arrow-up-mobile hidden">
+                <img src="./public/images/left.png" />
+            </div>
+        </div>
+        <div class="options-section">
+            <div class="head-options-wrapper">
+                <button class="option-btn1">
                       <a href="#">
                         <img src="./public/images/refresh-icon.png" />
                         <span>설정 초기화</span>
                       </a>
                     </button>
 
-                    <button id="option-btn2" class="option-btn2 active">
+                <button id="option-btn2" class="option-btn2 active">
                           <a href="#"> 
                             <span>공통 디자인</span>
                           </a>
@@ -232,90 +259,90 @@
                           </a>
                         </button>
 
-                    <button class="option-btn4">
+                <button class="option-btn4">
                       <a href="#">
                         <img src="./public/images/save-icon.png" />
                         <span>화면 저장</span>
                       </a>
                     </button>
-                </div>
-                <div id="option-wrapper1" class="option-wrapper1">
-                    <div class="option-settings">
-                        <div class="row1">
-                            <span>헤더</span>
-                            <button class="option-btn">
+            </div>
+            <div id="option-wrapper1" class="option-wrapper1">
+                <div class="option-settings">
+                    <div class="row1">
+                        <span>헤더</span>
+                        <button class="option-btn">
                   <a href="#">
                     <span>공통 적용 확인</span>
                   </a>
                 </button>
-                        </div>
-                        <div class="row2">
-                            <div class="menu1">
-                                <span>텍스트</span>
-                                <select class="shade-select">
+                    </div>
+                    <div class="row2">
+                        <div class="menu1">
+                            <span>텍스트</span>
+                            <select class="shade-select">
                     <option>Light</option>
                     <option>Red</option>
                     <option>Green</option>
                     <option>Yellow</option>
                   </select>
-                            </div>
-                            <select class="shade-select">
+                        </div>
+                        <select class="shade-select">
                   <option>24</option>
                   <option>22</option>
                   <option>233</option>
                   <option>12</option>
                 </select>
-                            <div class="emp-input-wrapper">
-                                <input type="color" name="favcolor" class="color-select-white" value="#ffffff">
+                        <div class="emp-input-wrapper">
+                            <input type="color" name="favcolor" class="color-select-white" value="#ffffff">
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="menu1">
+                            <span>아이콘</span>
+                            <div class="input-wrapper">
+                                <div class="input-div">
+                                    <input type="text" value="24" />
+                                    <span>W</span>
+                                </div>
+                                <img class="input-img" src="./public/images/lock-icon.png" />
                             </div>
                         </div>
-                        <div class="row3">
-                            <div class="menu1">
-                                <span>아이콘</span>
-                                <div class="input-wrapper">
-                                    <div class="input-div">
-                                        <input type="text" value="24" />
-                                        <span>W</span>
-                                    </div>
-                                    <img class="input-img" src="./public/images/lock-icon.png" />
-                                </div>
-                            </div>
-                            <div class="input-div">
-                                <input type="text" value="24" />
-                                <span>H</span>
-                            </div>
-                            <div class="emp-input-wrapper">
-                                <input type="color" name="favcolor" class="color-select-white" value="#ffffff">
+                        <div class="input-div">
+                            <input type="text" value="24" />
+                            <span>H</span>
+                        </div>
+                        <div class="emp-input-wrapper">
+                            <input type="color" name="favcolor" class="color-select-white" value="#ffffff">
 
+                        </div>
+                    </div>
+                    <div class="row4">
+                        <div class="menu1">
+                            <span>배경색</span>
+                            <div class="input-wrapper">
+                                <span>바탕색</span>
+                                <div class="emp-input-wrapper">
+                                    <input type="color" name="favcolor" class="color-select-red" value="#ff4956">
+                                </div>
                             </div>
                         </div>
-                        <div class="row4">
-                            <div class="menu1">
-                                <span>배경색</span>
-                                <div class="input-wrapper">
-                                    <span>바탕색</span>
-                                    <div class="emp-input-wrapper">
-                                        <input type="color" name="favcolor" class="color-select-red" value="#ff4956">
-                                    </div>
-                                </div>
+                        <div class="menu2">
+                            <div class="menu2-box1">
+                                <input class="check-input" type="checkbox" />
+                                <span>선 색</span>
                             </div>
-                            <div class="menu2">
-                                <div class="menu2-box1">
-                                    <input class="check-input" type="checkbox" />
-                                    <span>선 색</span>
-                                </div>
-                                <div class="emp-input-wrapper">
-                                    <input type="color" name="favcolor" class="color-select-gray" value="#eef4ff">
-                                </div>
+                            <div class="emp-input-wrapper">
+                                <input type="color" name="favcolor" class="color-select-gray" value="#eef4ff">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="option-wrapper2" class="option-wrapper2">
-                    <h1>Tab 2</h1>
-                </div>
+            </div>
+            <div id="option-wrapper2" class="option-wrapper2">
+                <h1>Tab 2</h1>
             </div>
         </div>
+    </div>
     </div>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
