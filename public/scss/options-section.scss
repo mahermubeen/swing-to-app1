@@ -38,16 +38,23 @@
         .options-same-btns {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            .active {
+                background-color: $menu-active !important;
+                a {
+                    color: $white !important;
+                }
+            }
             .option-btn2 {
                 border-width: 1px;
                 border-color: $menu-active;
                 border-style: solid;
                 border-radius: 2px 0 0 2px;
-                background-color: $menu-active;
+                background-color: rgb(255, 255, 255);
                 width: 200px;
                 height: 32px;
+                cursor: pointer;
                 a {
-                    color: $white;
+                    color: $dark-purple;
                 }
             }
             .option-btn3 {
@@ -58,6 +65,7 @@
                 background-color: rgb(255, 255, 255);
                 width: 200px;
                 height: 32px;
+                cursor: pointer;
                 a {
                     color: $dark-purple;
                 }
@@ -81,7 +89,7 @@
             }
         }
     }
-    .options-new-wrapper {
+    .option-wrapper1 {
         display: grid;
         grid-template-columns: max-content 1fr;
         grid-template-rows: max-content;
@@ -324,5 +332,8 @@
                 }
             }
         }
+    }
+    .option-wrapper2 {
+        display: none;
     }
 }

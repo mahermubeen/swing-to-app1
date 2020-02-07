@@ -162,7 +162,8 @@ a {
       font-size: 16px; }
 
 .mobile-section {
-  padding: 40px 0; }
+  padding: 40px 0;
+  background: #fafbfc; }
   .mobile-section .container-mobile {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
@@ -252,16 +253,21 @@ a {
     .options-section .head-options-wrapper .options-same-btns {
       display: grid;
       grid-template-columns: 1fr 1fr; }
+      .options-section .head-options-wrapper .options-same-btns .active {
+        background-color: #0074ff !important; }
+        .options-section .head-options-wrapper .options-same-btns .active a {
+          color: #ffffff !important; }
       .options-section .head-options-wrapper .options-same-btns .option-btn2 {
         border-width: 1px;
         border-color: #0074ff;
         border-style: solid;
         border-radius: 2px 0 0 2px;
-        background-color: #0074ff;
+        background-color: white;
         width: 200px;
-        height: 32px; }
+        height: 32px;
+        cursor: pointer; }
         .options-section .head-options-wrapper .options-same-btns .option-btn2 a {
-          color: #ffffff; }
+          color: #1a173b; }
       .options-section .head-options-wrapper .options-same-btns .option-btn3 {
         border-width: 1px;
         border-color: #0074ff;
@@ -269,7 +275,8 @@ a {
         border-radius: 0 2px 2px 0;
         background-color: white;
         width: 200px;
-        height: 32px; }
+        height: 32px;
+        cursor: pointer; }
         .options-section .head-options-wrapper .options-same-btns .option-btn3 a {
           color: #1a173b; }
     .options-section .head-options-wrapper .option-btn4 {
@@ -287,45 +294,45 @@ a {
         grid-gap: 5px;
         justify-content: center;
         grid-template-columns: repeat(2, max-content); }
-  .options-section .options-new-wrapper {
+  .options-section .option-wrapper1 {
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-template-rows: max-content; }
-    .options-section .options-new-wrapper .option-settings {
+    .options-section .option-wrapper1 .option-settings {
       background-color: #fafbfc;
       padding: 30px 20px;
       display: grid;
       grid-template-rows: repeat(4, max-content);
       grid-gap: 30px; }
-      .options-section .options-new-wrapper .option-settings .row1 {
+      .options-section .option-wrapper1 .option-settings .row1 {
         display: grid;
         grid-template-columns: 1fr max-content; }
-        .options-section .options-new-wrapper .option-settings .row1 span {
+        .options-section .option-wrapper1 .option-settings .row1 span {
           color: #1a173b;
           font-size: 18px; }
-        .options-section .options-new-wrapper .option-settings .row1 .option-btn {
+        .options-section .option-wrapper1 .option-settings .row1 .option-btn {
           border-width: 1px;
           border-color: #0074ff;
           border-style: solid;
           border-radius: 2px;
           background-color: white;
           padding: 5px; }
-          .options-section .options-new-wrapper .option-settings .row1 .option-btn a span {
+          .options-section .option-wrapper1 .option-settings .row1 .option-btn a span {
             color: #0074ff;
             font-size: 14px;
             padding: 5px; }
-      .options-section .options-new-wrapper .option-settings .row2 {
+      .options-section .option-wrapper1 .option-settings .row2 {
         display: grid;
         grid-template-columns: repeat(3, max-content);
         grid-gap: 10px;
         align-items: end; }
-        .options-section .options-new-wrapper .option-settings .row2 .menu1 {
+        .options-section .option-wrapper1 .option-settings .row2 .menu1 {
           display: grid;
           grid-gap: 7px; }
-          .options-section .options-new-wrapper .option-settings .row2 .menu1 span {
+          .options-section .option-wrapper1 .option-settings .row2 .menu1 span {
             color: #354052;
             font-size: 16px; }
-          .options-section .options-new-wrapper .option-settings .row2 .menu1 .shade-select {
+          .options-section .option-wrapper1 .option-settings .row2 .menu1 .shade-select {
             border-width: 1px;
             border-color: #d6d6d6;
             border-style: solid;
@@ -335,7 +342,7 @@ a {
             height: 40px;
             font-size: 15px;
             padding: 5px; }
-        .options-section .options-new-wrapper .option-settings .row2 .shade-select {
+        .options-section .option-wrapper1 .option-settings .row2 .shade-select {
           border-width: 1px;
           border-color: #d6d6d6;
           border-style: solid;
@@ -345,7 +352,7 @@ a {
           height: 40px;
           font-size: 15px;
           padding: 5px; }
-        .options-section .options-new-wrapper .option-settings .row2 .emp-input-wrapper {
+        .options-section .option-wrapper1 .option-settings .row2 .emp-input-wrapper {
           border-width: 1px;
           border-color: #d6d6d6;
           border-style: solid;
@@ -353,7 +360,7 @@ a {
           width: 96px;
           height: 40px;
           overflow: hidden; }
-          .options-section .options-new-wrapper .option-settings .row2 .emp-input-wrapper .color-select-white {
+          .options-section .option-wrapper1 .option-settings .row2 .emp-input-wrapper .color-select-white {
             border: none;
             background: none;
             width: 100px;
@@ -361,17 +368,17 @@ a {
             position: relative;
             bottom: 5px;
             right: 3px; }
-      .options-section .options-new-wrapper .option-settings .row3 {
+      .options-section .option-wrapper1 .option-settings .row3 {
         display: grid;
         grid-template-columns: repeat(3, max-content);
         grid-gap: 10px;
         align-items: end; }
-        .options-section .options-new-wrapper .option-settings .row3 .menu1 {
+        .options-section .option-wrapper1 .option-settings .row3 .menu1 {
           display: grid;
           grid-gap: 7px; }
-          .options-section .options-new-wrapper .option-settings .row3 .menu1 span {
+          .options-section .option-wrapper1 .option-settings .row3 .menu1 span {
             font-size: 16px; }
-          .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div {
+          .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div {
             background: white;
             border-width: 1px;
             border-color: #d6d6d6;
@@ -383,13 +390,13 @@ a {
             align-items: center;
             display: inline-flex;
             padding: 10px; }
-            .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div input {
+            .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div input {
               border: none;
               width: 100%;
               font-size: 15px; }
-            .options-section .options-new-wrapper .option-settings .row3 .menu1 .input-wrapper .input-div span {
+            .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div span {
               font-size: 15px; }
-        .options-section .options-new-wrapper .option-settings .row3 .input-div {
+        .options-section .option-wrapper1 .option-settings .row3 .input-div {
           background: white;
           border-width: 1px;
           border-color: #d6d6d6;
@@ -401,13 +408,13 @@ a {
           align-items: center;
           display: inline-flex;
           padding: 10px; }
-          .options-section .options-new-wrapper .option-settings .row3 .input-div input {
+          .options-section .option-wrapper1 .option-settings .row3 .input-div input {
             border: none;
             width: 100%;
             font-size: 15px; }
-          .options-section .options-new-wrapper .option-settings .row3 .input-div span {
+          .options-section .option-wrapper1 .option-settings .row3 .input-div span {
             font-size: 15px; }
-        .options-section .options-new-wrapper .option-settings .row3 .emp-input-wrapper {
+        .options-section .option-wrapper1 .option-settings .row3 .emp-input-wrapper {
           border-width: 1px;
           border-color: #d6d6d6;
           border-style: solid;
@@ -415,7 +422,7 @@ a {
           width: 96px;
           height: 40px;
           overflow: hidden; }
-          .options-section .options-new-wrapper .option-settings .row3 .emp-input-wrapper .color-select-white {
+          .options-section .option-wrapper1 .option-settings .row3 .emp-input-wrapper .color-select-white {
             border: none;
             background: none;
             width: 100px;
@@ -423,25 +430,25 @@ a {
             position: relative;
             bottom: 5px;
             right: 3px; }
-      .options-section .options-new-wrapper .option-settings .row4 {
+      .options-section .option-wrapper1 .option-settings .row4 {
         display: grid;
         grid-template-columns: repeat(2, max-content);
         grid-gap: 30px; }
-        .options-section .options-new-wrapper .option-settings .row4 .menu1 {
+        .options-section .option-wrapper1 .option-settings .row4 .menu1 {
           display: grid;
           grid-gap: 7px; }
-          .options-section .options-new-wrapper .option-settings .row4 .menu1 span {
+          .options-section .option-wrapper1 .option-settings .row4 .menu1 span {
             color: #354052;
             font-size: 16px; }
-          .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper {
+          .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper {
             display: grid;
             grid-template-columns: 1fr max-content;
             grid-gap: 7px;
             align-items: center; }
-            .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper span {
+            .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper span {
               color: #5f6d79;
               font-size: 15px; }
-            .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper {
+            .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper {
               border-width: 1px;
               border-color: #d6d6d6;
               border-style: solid;
@@ -449,7 +456,7 @@ a {
               width: 96px;
               height: 40px;
               overflow: hidden; }
-              .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper .color-select-red {
+              .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper .color-select-red {
                 border: none;
                 background: none;
                 width: 100px;
@@ -457,21 +464,21 @@ a {
                 position: relative;
                 bottom: 5px;
                 right: 3px; }
-        .options-section .options-new-wrapper .option-settings .row4 .menu2 {
+        .options-section .option-wrapper1 .option-settings .row4 .menu2 {
           display: grid;
           grid-template-columns: repeat(3, max-content);
           grid-gap: 7px;
           align-items: end; }
-          .options-section .options-new-wrapper .option-settings .row4 .menu2 .menu2-box1 {
+          .options-section .option-wrapper1 .option-settings .row4 .menu2 .menu2-box1 {
             display: grid;
             grid-template-columns: max-content 1fr;
             grid-gap: 7px;
             align-items: center;
             height: 40px; }
-            .options-section .options-new-wrapper .option-settings .row4 .menu2 .menu2-box1 span {
+            .options-section .option-wrapper1 .option-settings .row4 .menu2 .menu2-box1 span {
               color: #5f6d79;
               font-size: 15px; }
-          .options-section .options-new-wrapper .option-settings .row4 .menu2 .emp-input-wrapper {
+          .options-section .option-wrapper1 .option-settings .row4 .menu2 .emp-input-wrapper {
             border-width: 1px;
             border-color: #d6d6d6;
             border-style: solid;
@@ -479,7 +486,7 @@ a {
             width: 96px;
             height: 40px;
             overflow: hidden; }
-            .options-section .options-new-wrapper .option-settings .row4 .menu2 .emp-input-wrapper .color-select-gray {
+            .options-section .option-wrapper1 .option-settings .row4 .menu2 .emp-input-wrapper .color-select-gray {
               border: none;
               background: none;
               width: 100px;
@@ -487,5 +494,7 @@ a {
               position: relative;
               bottom: 5px;
               right: 3px; }
+  .options-section .option-wrapper2 {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

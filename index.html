@@ -151,31 +151,31 @@
             <div class="options-section">
                 <div class="head-options-wrapper">
                     <button class="option-btn1">
-              <a href="#">
-                <img src="./public/images/refresh-icon.png" />
-                <span>설정 초기화</span>
-              </a>
-            </button>
-                    <div class="options-same-btns">
-                        <button class="option-btn2">
-                <a href="#">
-                  <span>공통 디자인</span>
-                </a>
-              </button>
-                        <button class="option-btn3">
-                <a href="#">
-                  <span>상세 디자인</span>
-                </a>
-              </button>
-                    </div>
+                      <a href="#">
+                        <img src="./public/images/refresh-icon.png" />
+                        <span>설정 초기화</span>
+                      </a>
+                    </button>
+                    <div id="btn-div" class="options-same-btns">
+                        <button id="option-btn2" class="option-btn2 active">
+                          <a href="#"> 
+                            <span>공통 디자인</span>
+                          </a>
+                        </button id->
+                        <button id="option-btn3" class="option-btn3">
+                          <a href="#">
+                            <span>상세 디자인</span>
+                          </a>
+                        </button>
+                    </div id>
                     <button class="option-btn4">
-              <a href="#">
-                <img src="./public/images/save-icon.png" />
-                <span>화면 저장</span>
-              </a>
-            </button>
+                      <a href="#">
+                        <img src="./public/images/save-icon.png" />
+                        <span>화면 저장</span>
+                      </a>
+                    </button>
                 </div>
-                <div class="options-new-wrapper">
+                <div id="option-wrapper1" class="option-wrapper1">
                     <div class="option-settings">
                         <div class="row1">
                             <span>헤더</span>
@@ -247,9 +247,15 @@
                         </div>
                     </div>
                 </div>
+                <div id="option-wrapper2" class="option-wrapper2">
+                    <h1>Tab 2</h1>
+                </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script src="./public/js/script.js"></script>
 </body>
 
 </html>
