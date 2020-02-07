@@ -59,6 +59,22 @@
         }
         .pages {}
     }
+    .head-btn-wrapper {
+        .menu-head-btn {
+            border-width: 1px;
+            border-color: #0074ff;
+            border-style: solid;
+            border-radius: 2px;
+            background-color: white;
+            padding: 10px 22px;
+            width: 100%;
+            cursor: pointer;
+            a {
+                color: $menu-active;
+                font-size: 13px;
+            }
+        }
+    }
 }
 
 //responsive
@@ -70,6 +86,9 @@
 
 @media only screen and (max-width: 998px) {
     .header-section {
+        .paging-wrapper {
+            font-size: 14px;
+        }
         nav {
             .nav-ul {
                  :nth-child(4),
@@ -78,6 +97,11 @@
                 }
                  :nth-child(3) {
                     border-right: 0;
+                }
+                li {
+                    a {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -88,6 +112,50 @@
                 }
                 .page2 {
                     display: inline;
+                }
+            }
+        }
+        .brand-wrapper {
+            h1 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .header-section {
+        grid-template-columns: 1fr max-content;
+        nav {
+            display: none;
+        }
+        .paging-wrapper {
+            display: none;
+        }
+        .head-btn-wrapper {
+            display: grid;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header-section {
+        .brand-wrapper {
+            grid-gap: 7px;
+            figure {
+                width: 35px;
+                height: 35px;
+            }
+            h1 {
+                font-size: 12px;
+            }
+        }
+        .head-btn-wrapper {
+            .menu-head-btn {
+                padding: 7px 10px;
+                a {
+                    font-size: 12px;
                 }
             }
         }

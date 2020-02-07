@@ -447,6 +447,7 @@
                         }
                     }
                     .row3 {
+                        grid-gap: 14px;
                         .menu1 {
                             .input-wrapper {
                                 .input-div {
@@ -481,6 +482,7 @@
                         }
                     }
                     .row4 {
+                        grid-gap: 13px;
                         .menu1 {
                             .input-wrapper {
                                 span {
@@ -513,6 +515,15 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 785px) {
+        .options-section {
+            justify-content: center;
+            img {
+                width: 15px;
             }
         }
     }

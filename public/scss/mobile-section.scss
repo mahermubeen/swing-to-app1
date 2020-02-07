@@ -108,3 +108,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 998px) {
+    .mobile-section {
+        .container-mobile {
+            .mobile-btns-foot {
+                img {
+                    width: 15px !important;
+                }
+            }
+        }
+    }
+}

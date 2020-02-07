@@ -31,3 +31,24 @@ $('.nav-ul li a').click(function() {
     $('.nav-ul li a.active').removeClass('active');
     $(this).addClass('active');
 });
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+}
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        document.getElementById('myDropdown').style.display = "none";
+    }
+}
