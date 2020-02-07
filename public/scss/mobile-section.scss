@@ -68,3 +68,43 @@
         }
     }
 }
+
+//responsive
+@media only screen and (max-width: 1130px) {
+    .mobile-section {
+        .container-mobile {
+            figure {
+                display: grid;
+                justify-items: center;
+                img {
+                    width: 70%;
+                }
+            }
+            .mobile-select {
+                justify-self: center;
+                padding: 0 0 5px;
+                margin: 0;
+            }
+            .mobile-btns-foot {
+                grid-gap: 10px;
+                margin: 0 55px;
+                .mobile-btn1 {
+                    a {
+                        padding: 5px 5px;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .mobile-btn2 {
+                    a {
+                        padding: 4px 5px;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
