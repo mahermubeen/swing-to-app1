@@ -350,14 +350,17 @@ a {
           border-color: #d6d6d6;
           border-style: solid;
           border-radius: 2px;
-          background-color: white;
           width: 96px;
           height: 40px;
-          display: grid;
-          align-items: center; }
-          .options-section .options-new-wrapper .option-settings .row2 .emp-input-wrapper .empty-input {
+          overflow: hidden; }
+          .options-section .options-new-wrapper .option-settings .row2 .emp-input-wrapper .color-select-white {
             border: none;
-            width: 100%; }
+            background: none;
+            width: 100px;
+            height: 48px;
+            position: relative;
+            bottom: 5px;
+            right: 3px; }
       .options-section .options-new-wrapper .option-settings .row3 {
         display: grid;
         grid-template-columns: repeat(3, max-content);
@@ -409,14 +412,17 @@ a {
           border-color: #d6d6d6;
           border-style: solid;
           border-radius: 2px;
-          background-color: white;
           width: 96px;
           height: 40px;
-          display: grid;
-          align-items: center; }
-          .options-section .options-new-wrapper .option-settings .row3 .emp-input-wrapper .empty-input {
+          overflow: hidden; }
+          .options-section .options-new-wrapper .option-settings .row3 .emp-input-wrapper .color-select-white {
             border: none;
-            width: 100%; }
+            background: none;
+            width: 100px;
+            height: 48px;
+            position: relative;
+            bottom: 5px;
+            right: 3px; }
       .options-section .options-new-wrapper .option-settings .row4 {
         display: grid;
         grid-template-columns: repeat(2, max-content);
@@ -435,14 +441,22 @@ a {
             .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper span {
               color: #5f6d79;
               font-size: 15px; }
-            .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper .color-select {
+            .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper {
               border-width: 1px;
               border-color: #d6d6d6;
               border-style: solid;
               border-radius: 2px;
-              background-color: #ff4956;
               width: 96px;
-              height: 40px; }
+              height: 40px;
+              overflow: hidden; }
+              .options-section .options-new-wrapper .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper .color-select-red {
+                border: none;
+                background: none;
+                width: 100px;
+                height: 48px;
+                position: relative;
+                bottom: 5px;
+                right: 3px; }
         .options-section .options-new-wrapper .option-settings .row4 .menu2 {
           display: grid;
           grid-template-columns: repeat(3, max-content);
@@ -457,13 +471,21 @@ a {
             .options-section .options-new-wrapper .option-settings .row4 .menu2 .menu2-box1 span {
               color: #5f6d79;
               font-size: 15px; }
-          .options-section .options-new-wrapper .option-settings .row4 .menu2 .color-select {
+          .options-section .options-new-wrapper .option-settings .row4 .menu2 .emp-input-wrapper {
             border-width: 1px;
             border-color: #d6d6d6;
             border-style: solid;
             border-radius: 2px;
-            background-color: #eef4ff;
             width: 96px;
-            height: 40px; }
+            height: 40px;
+            overflow: hidden; }
+            .options-section .options-new-wrapper .option-settings .row4 .menu2 .emp-input-wrapper .color-select-gray {
+              border: none;
+              background: none;
+              width: 100px;
+              height: 48px;
+              position: relative;
+              bottom: 5px;
+              right: 3px; }
 
 /*# sourceMappingURL=style.css.map */
