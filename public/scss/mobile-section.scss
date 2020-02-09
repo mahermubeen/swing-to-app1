@@ -1,5 +1,5 @@
 .mobile-section {
-    padding: 40px 0;
+    padding: 40px 0 0;
     background: #fafbfc;
     .arrow-down-mobile {
         background: #f5cbcb;
@@ -35,9 +35,9 @@
     }
     .container-mobile {
         display: grid;
-        grid-template-rows: max-content 1fr max-content;
+        grid-template-rows: max-content max-content max-content;
         justify-content: center;
-        grid-gap: 16px;
+        grid-gap: 10px;
         .mobile-select {
             margin: 0 35px;
             border-width: 1px;
@@ -50,13 +50,35 @@
                 font-size: $menu-font;
             }
         }
+        // figure {
+        //     display: grid;
+        //     justify-items: center;
+        // }
+        .mobile-frame {
+            border: 4px solid black;
+            border-radius: 30px;
+            background-clip: border-box;
+            background: black;
+            display: grid;
+            justify-self: center;
+            width: 70%;
+            margin: 7px 0 15px;
+            box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
+            .mobile-img {
+                border-radius: 25px;
+                overflow: hidden;
+                border: 7px solid black;
+                background: white;
+                width: 100%;
+                height: min(100vh - 255px);
+            }
+        }
         .mobile-btns-foot {
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin: 0 18px;
-            position: relative;
-            bottom: 50px;
             grid-gap: 25px;
+            padding: 10px 0 0;
             .mobile-btn1 {
                 a {
                     border-width: 1px;
@@ -102,20 +124,19 @@
 }
 
 //responsive
+@media only screen and (max-width: 1370px) {
+    .mobile-section {
+        .container-mobile {}
+    }
+}
+
 @media only screen and (max-width: 1130px) {
     .mobile-section {
         position: relative;
         display: grid;
         justify-items: center;
-        padding: 40px 0 0;
+        padding: 25px 0 0;
         .container-mobile {
-            figure {
-                display: grid;
-                justify-items: center;
-                img {
-                    width: 70%;
-                }
-            }
             .mobile-select {
                 justify-self: center;
                 padding: 0 0 5px;

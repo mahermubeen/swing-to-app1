@@ -56,14 +56,18 @@ window.onclick = function(event) {
 var up_btn = document.getElementById('up-btn');
 var down_btn = document.getElementById('down-btn');
 var mobile_wrapper = document.getElementById('mobile-wrapper');
+var option_section = document.getElementById('option-section');
 
 down_btn.addEventListener("click", function() {
     mobile_wrapper.className = mobile_wrapper.className.replace(" up", " down");
+    option_section.className = option_section.className.replace("options-section block", "options-section inactive");
+
 });
 
 
 up_btn.addEventListener("click", function() {
     mobile_wrapper.className = mobile_wrapper.className.replace(" down", " up");
+    option_section.className = option_section.className.replace("options-section inactive", "options-section block");
 });
 
 

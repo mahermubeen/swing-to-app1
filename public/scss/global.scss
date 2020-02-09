@@ -65,6 +65,10 @@ a {
     display: none;
 }
 
+.inactive {
+    display: none !important;
+}
+
 .block {
     display: block;
 }
@@ -100,6 +104,7 @@ a {
                 background-color: transparent;
                 opacity: 1;
                 overflow: auto;
+                margin-bottom: 40px;
             }
             .arrow-down-mobile {
                 display: none;
@@ -109,4 +114,29 @@ a {
             }
         }
     }
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #0074ff;
+}
+
+.bold {
+    font-weight: bold;
 }

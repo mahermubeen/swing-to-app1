@@ -118,7 +118,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="dropdown">
+                    <div class="dropdown hidden">
                         <div class="dropbtn">
                             <div onclick="myFunction()" class="menu-name">
                                 <img class="blue-img" src="./public/images/blue-menu-icon.png" />
@@ -211,10 +211,15 @@
               <option>아이폰 8 </option>
               <option>아이폰 8 PLUS / Iphone</option>
             </select>
-                    <figure>
+                    <!-- <figure>
                         <img src="./public/images/mobile-pic.png" />
 
-                    </figure>
+                    </figure> -->
+
+                    <div class="mobile-frame">
+                        <iframe class="mobile-img" scrolling="no" name='mobile-view' src='#'></iframe>
+                    </div>
+                    
 
                     <div class="mobile-btns-foot">
                         <div class="mobile-btn1">
@@ -239,7 +244,7 @@
                 <img src="./public/images/left.png" />
             </div>
         </div>
-        <div class="options-section">
+        <div id="option-section" class="options-section block">
             <div class="head-options-wrapper">
                 <button class="option-btn1">
                       <a href="#">
@@ -269,7 +274,7 @@
             <div id="option-wrapper1" class="option-wrapper1">
                 <div class="option-settings">
                     <div class="row1">
-                        <span>헤더</span>
+                        <span class="bold">헤더</span>
                         <button class="option-btn">
                   <a href="#">
                     <span>공통 적용 확인</span>

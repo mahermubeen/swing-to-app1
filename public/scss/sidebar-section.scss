@@ -22,7 +22,8 @@
                 border-bottom: 1px solid #d1e0ff;
                 border-right: 1px solid #d1e0ff;
                 .options-ul {
-                    padding: 0 0 277px;
+                    overflow-y: auto;
+                    height: min(100vh - 265px);
                     li {
                         .active {
                             color: $menu-active;
@@ -141,11 +142,7 @@
         //responsive 
         @media only screen and (max-width: 1190px) {
             .sidebar-section {
-                .sidebar-options-wrapper {
-                    .options-ul {
-                        padding: 0 0 50px;
-                    }
-                }
+                .sidebar-options-wrapper {}
             }
         }
         

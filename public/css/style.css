@@ -52,6 +52,9 @@ a {
 .hidden {
   display: none; }
 
+.inactive {
+  display: none !important; }
+
 .block {
   display: block; }
 
@@ -79,11 +82,27 @@ a {
       .body-section .down .container-mobile {
         background-color: transparent;
         opacity: 1;
-        overflow: auto; }
+        overflow: auto;
+        margin-bottom: 40px; }
       .body-section .down .arrow-down-mobile {
         display: none; }
       .body-section .down .arrow-up-mobile {
         display: grid; } }
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0074ff; }
+
+.bold {
+  font-weight: bold; }
+
 .header-section {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
@@ -205,7 +224,8 @@ a {
   border-bottom: 1px solid #d1e0ff;
   border-right: 1px solid #d1e0ff; }
   .sidebar-section .sidebar-options-wrapper .options-ul {
-    padding: 0 0 277px; }
+    overflow-y: auto;
+    height: min(100vh - 265px); }
     .sidebar-section .sidebar-options-wrapper .options-ul li .active {
       color: #0074ff;
       background-color: #fafbfc; }
@@ -294,9 +314,6 @@ a {
       color: #aaaaaa;
       font-size: 16px; }
 
-@media only screen and (max-width: 1190px) {
-  .sidebar-section .sidebar-options-wrapper .options-ul {
-    padding: 0 0 50px; } }
 @media only screen and (max-width: 998px) {
   .sidebar-section .head-btn-wrapper .menu-head-btn {
     padding: 10px 22px; }
@@ -352,7 +369,7 @@ a {
     .sidebar-section .foot-btn-wrapper .menu-foot-btn a {
       font-size: 12px; } }
 .mobile-section {
-  padding: 40px 0;
+  padding: 40px 0 0;
   background: #fafbfc; }
   .mobile-section .arrow-down-mobile {
     background: #f5cbcb;
@@ -384,9 +401,9 @@ a {
       width: 6px; }
   .mobile-section .container-mobile {
     display: grid;
-    grid-template-rows: max-content 1fr max-content;
+    grid-template-rows: max-content max-content max-content;
     justify-content: center;
-    grid-gap: 16px; }
+    grid-gap: 10px; }
     .mobile-section .container-mobile .mobile-select {
       margin: 0 35px;
       border-width: 1px;
@@ -397,13 +414,29 @@ a {
       padding: 6px 60px; }
       .mobile-section .container-mobile .mobile-select option {
         font-size: 16px; }
+    .mobile-section .container-mobile .mobile-frame {
+      border: 4px solid black;
+      border-radius: 30px;
+      background-clip: border-box;
+      background: black;
+      display: grid;
+      justify-self: center;
+      width: 70%;
+      margin: 7px 0 15px;
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75); }
+      .mobile-section .container-mobile .mobile-frame .mobile-img {
+        border-radius: 25px;
+        overflow: hidden;
+        border: 7px solid black;
+        background: white;
+        width: 100%;
+        height: min(100vh - 255px); }
     .mobile-section .container-mobile .mobile-btns-foot {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin: 0 18px;
-      position: relative;
-      bottom: 50px;
-      grid-gap: 25px; }
+      grid-gap: 25px;
+      padding: 10px 0 0; }
       .mobile-section .container-mobile .mobile-btns-foot .mobile-btn1 a {
         border-width: 1px;
         border-color: #8a96a0;
@@ -442,12 +475,7 @@ a {
     position: relative;
     display: grid;
     justify-items: center;
-    padding: 40px 0 0; }
-    .mobile-section .container-mobile figure {
-      display: grid;
-      justify-items: center; }
-      .mobile-section .container-mobile figure img {
-        width: 70%; }
+    padding: 25px 0 0; }
     .mobile-section .container-mobile .mobile-select {
       justify-self: center;
       padding: 0 0 5px;
@@ -542,7 +570,9 @@ a {
   .options-section .option-wrapper1 {
     display: grid;
     grid-template-columns: max-content 1fr;
-    grid-template-rows: max-content; }
+    grid-template-rows: max-content;
+    overflow-y: auto;
+    height: min(100vh - 237px); }
     .options-section .option-wrapper1 .option-settings {
       background-color: #fafbfc;
       padding: 30px 20px;
@@ -752,24 +782,29 @@ a {
     .options-section .head-options-wrapper .option-btn4 {
       margin-left: 72px; } }
 @media only screen and (max-width: 1410px) {
-  .options-section .option-wrapper1 .option-settings .row2 .menu1 .shade-select {
-    width: 145px; }
-  .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div {
-    width: 125px; }
-  .options-section .option-wrapper1 .option-settings .row3 .input-div {
-    width: 97px; } }
+  .options-section {
+    padding: 25px;
+    grid-gap: 25px; }
+    .options-section .option-wrapper1 .option-settings {
+      grid-gap: 15px; }
+      .options-section .option-wrapper1 .option-settings .row2 .menu1 .shade-select {
+        width: 145px; }
+      .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div {
+        width: 125px; }
+      .options-section .option-wrapper1 .option-settings .row3 .input-div {
+        width: 97px; } }
 @media only screen and (max-width: 990px) {
   .options-section .head-options-wrapper span {
     font-size: 12px !important; }
   .options-section .head-options-wrapper .option-btn2 {
-    width: 120px; }
+    width: 135px; }
   .options-section .head-options-wrapper .option-btn3 {
-    width: 120px; }
+    width: 130px; }
+  .options-section .head-options-wrapper .option-btn1 {
+    width: 127px; }
   .options-section .head-options-wrapper .option-btn4 {
     margin-left: 8px;
-    width: 112px; }
-  .options-section .head-options-wrapper .option-btn1 {
-    width: 115px; }
+    width: 123px; }
   .options-section .option-wrapper1 .option-settings .row1 span {
     font-size: 13px; }
   .options-section .option-wrapper1 .option-settings .row1 .option-btn a span {
@@ -781,58 +816,58 @@ a {
   .options-section .option-wrapper1 .option-settings .row2 {
     grid-gap: 14px; }
     .options-section .option-wrapper1 .option-settings .row2 .menu1 .shade-select {
-      width: 80px;
+      width: 85px;
       height: 28px;
       font-size: 12px; }
     .options-section .option-wrapper1 .option-settings .row2 .shade-select {
-      width: 50px;
+      width: 60px;
       height: 28px;
       font-size: 12px; }
     .options-section .option-wrapper1 .option-settings .row2 .emp-input-wrapper {
-      width: 41px;
+      width: 53px;
       height: 28px; }
       .options-section .option-wrapper1 .option-settings .row2 .emp-input-wrapper .color-select-white {
-        width: 45px;
+        width: 57px;
         height: 37px; }
   .options-section .option-wrapper1 .option-settings .row3 {
     grid-gap: 14px; }
     .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div {
-      width: 60px;
+      width: 66px;
       height: 28px; }
       .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div input {
         font-size: 12px; }
       .options-section .option-wrapper1 .option-settings .row3 .menu1 .input-wrapper .input-div span {
         font-size: 12px; }
     .options-section .option-wrapper1 .option-settings .row3 .input-div {
-      width: 50px;
+      width: 60px;
       height: 28px; }
       .options-section .option-wrapper1 .option-settings .row3 .input-div input {
         font-size: 12px; }
       .options-section .option-wrapper1 .option-settings .row3 .input-div span {
         font-size: 12px; }
     .options-section .option-wrapper1 .option-settings .row3 .emp-input-wrapper {
-      width: 41px;
+      width: 53px;
       height: 28px; }
       .options-section .option-wrapper1 .option-settings .row3 .emp-input-wrapper .color-select-white {
-        width: 45px;
+        width: 57px;
         height: 37px; }
   .options-section .option-wrapper1 .option-settings .row4 {
     grid-gap: 13px; }
     .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper span {
       font-size: 12px; }
     .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper {
-      width: 41px;
+      width: 53px;
       height: 28px; }
       .options-section .option-wrapper1 .option-settings .row4 .menu1 .input-wrapper .emp-input-wrapper .color-select-red {
-        width: 45px;
+        width: 57px;
         height: 37px; }
     .options-section .option-wrapper1 .option-settings .row4 .menu2 .menu2-box1 span {
       font-size: 12px; }
     .options-section .option-wrapper1 .option-settings .row4 .menu2 .emp-input-wrapper {
-      width: 41px;
+      width: 53px;
       height: 28px; }
       .options-section .option-wrapper1 .option-settings .row4 .menu2 .emp-input-wrapper .color-select-gray {
-        width: 45px;
+        width: 57px;
         height: 37px; } }
 @media only screen and (max-width: 785px) {
   .options-section {
@@ -907,6 +942,8 @@ a {
         padding: 20px 0; }
     .nav-mobile nav .nav-ul :nth-child(4) {
       display: none; }
+      .nav-mobile nav .nav-ul :nth-child(4) a {
+        font-size: 11px !important; }
     .nav-mobile nav .nav-ul :nth-child(3) {
       border-right: 0; }
     .nav-mobile .paging-wrapper {
